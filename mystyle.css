@@ -5,6 +5,47 @@ body{
   background-size: cover;
 }
 
+#bottombar{
+  display: block;
+  background-color: orangered;
+  border-style: solid;
+  max-width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+legend{
+  color: black;
+  padding: 5px 10px;
+  border-style: solid
+}
+
+
+.chamber{
+display: inline-block;
+  max-width: 50%;
+}
+
+.socials{
+  display: inline-block;
+  max-width: 50%;
+}
+
+.form{
+  display: inline-block;
+  max-width: 50%;
+}
+
+form{
+  text-align: left;
+  padding: 16px;
+}
+
+fieldset{
+  border-style: double;
+}
+
 li{
     display: inline;
     font-family: Arial, Helvetica, sans-serif;
@@ -17,9 +58,15 @@ li{
   height: auto;
 }
 
+#header1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
-
-h1{text-align: center;
+h1{
+  text-align: center;
     font-style: bold;
     font-family: Arial, Helvetica, sans-serif;
     }
@@ -28,26 +75,70 @@ h2{
     text-align: center;
     font-style: bold;
     font-family: Arial, Helvetica, sans-serif;
-    color: brown;
+    color: orangered;
 }
 
 p{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    color:black
-    
+    color:black;
+    background-color: whitesmoke;
+    opacity: 80%;
 }
+
 
 #about{
     max-width: 100%
-    float: center;
     
 }
 
-#pictures{
-    display: flex;
-  justify-content: center;
+.hotels{
+  display: grid;
+  grid-template: 150px / auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+  row-gap: 200px;
+  align-content: space-evenly;
 }
+
+figcaption {
+  text-align: center;
+}
+
+
+#pictures{
+  display: flex;
+justify-content: center;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 50px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
 
 /* Screen reader only */
 .sr-only {
@@ -99,7 +190,7 @@ p{
     width: 200px;
     background: #1a1a1a;
   }
-  
+
   .main-menu a {
     display: block;
     padding: .75em 15px;
@@ -237,3 +328,11 @@ p{
     margin: 0 30px 0 10px;
     font-size: 1.5em;
   }
+
+a:link{
+text-decoration: solid;
+color: #000;
+text-align: center;
+text-decoration: underline;
+}
+
